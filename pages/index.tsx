@@ -210,41 +210,6 @@ export default function Home() {
                 className="rounded-lg object-cover"
               />
             </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                alt="web2"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                alt="web3"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                alt="web4"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                alt="web5"
-                className="rounded-lg object-cover"
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                alt="web6"
-                className="rounded-lg object-cover"
-              />
-            </div>
           </div>
         </section>
       </main>
