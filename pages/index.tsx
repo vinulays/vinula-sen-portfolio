@@ -13,23 +13,16 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
-import deved from "../public/dev-ed-wave.png";
-import design from "../public/design.png";
-import coding from "../public/code.png";
-import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import ecommerce from "../public/ecommerce.png";
+import deved from "../public/profile-picture.jpg";
+import ecommerce from "../public/clientside-converter.png";
+import jobportal from "../public/elitejobs.png";
+
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -49,15 +42,15 @@ export default function Home() {
             <h1 className="text-xl font-burtons dark:text-white">vinulasen</h1>
             <ul className="flex items-center">
               <li>
-                {darkMode ? (
+                {!darkMode ? (
                   <BsFillSunFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl dark:text-white"
+                    className="cursor-pointer text-2xl "
                   />
                 ) : (
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl "
+                    className="cursor-pointer text-2xl dark:text-white"
                   />
                 )}
               </li>
@@ -77,7 +70,7 @@ export default function Home() {
               Vinula Senarathne
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
-              Developer and Designer.
+              Full Stack Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400">
               Born in 2000 in Colombo, Sri Lanka. I believe web development can
@@ -96,7 +89,7 @@ export default function Home() {
               <AiFillGithub />
             </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image
               src={deved}
               alt="3d-rendered-image"
@@ -109,106 +102,40 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <div className="my-10">
-            <h3 className="text-3xl py-1 dark:text-white">What I do</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
-              I design and develop industry oriented software applications using
-              technologies in demand.
-            </p>
-          </div>
-
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800">
-              <Image
-                className="mx-auto"
-                src={design}
-                alt="design"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100">
-                Beautiful Designs
-              </h3>
-              <p className="py-2 dark:text-gray-200">
-                Creating elegant designs suited for your best design theory
-              </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Photoshop
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Figma
-              </button>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800">
-              <Image
-                className="mx-auto"
-                src={coding}
-                alt="code"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100">
-                Quality Code
-              </h3>
-              <p className="py-2 dark:text-gray-200">
-                Creating elegant designs suited for your best design theory
-              </p>
-              <h4 className="py-4 text-teal-600">Skills I have</h4>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Java
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                React JS
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Angular
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                JavaScript & TypeScript
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Spring Boot
-              </button>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Tailwind CSS
-              </button>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-800">
-              <Image
-                className="mx-auto"
-                src={consulting}
-                alt="consulting"
-                width={100}
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-gray-100">
-                Mentoring
-              </h3>
-              <p className="py-2 dark:text-gray-200">
-                Creating elegant designs suited for your best design theory
-              </p>
-              <h4 className="py-4 text-teal-600">What I do</h4>
-              <button className="px-2 py-1 m-1 dark:text-gray-200 rounded border">
-                Roadmapping
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div className="py-2">
-            <h3 className="text-3xl py-1 dark:text-white">My Projects</h3>
+        <section className="mt-16">
+          <div className="py-2 text-center">
+            <h3 className="text-3xl py-1 dark:text-white">My Portfolio</h3>
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={ecommerce}
-                alt="web1"
-                className="rounded-lg object-cover"
-              />
+            <div className="dark:text-white">
+              <div className="text-2xl mb-7">
+                Client-side Video Converter Application
+              </div>
+              <a href="https://convertify-vinulays.vercel.app" target="_blank">
+                <Image
+                  src={ecommerce}
+                  alt="web1"
+                  className="rounded-lg object-cover"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="dark:text-white">
+              <div className="text-2xl mb-7">
+                Elite Jobs - Job portal web application
+              </div>
+              <a href="https://convertify-vinulays.vercel.app" target="_blank">
+                <Image
+                  src={jobportal}
+                  alt="web2"
+                  sizes="(max-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
+                  className="rounded-lg"
+                />
+              </a>
             </div>
           </div>
         </section>
