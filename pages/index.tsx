@@ -112,7 +112,11 @@ export default function Home() {
               <div className="text-2xl mb-7">
                 Client-side Video Converter Application
               </div>
-              <a href="https://convertify-vinulays.vercel.app" target="_blank">
+              <a
+                href="https://convertify-vinulays.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={ecommerce}
                   alt="web1"
@@ -126,7 +130,11 @@ export default function Home() {
               <div className="text-2xl mb-7">
                 Elite Jobs - Job portal web application
               </div>
-              <a href="https://convertify-vinulays.vercel.app" target="_blank">
+              <a
+                href="https://convertify-vinulays.vercel.app"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Image
                   src={jobportal}
                   alt="web2"
